@@ -10,6 +10,7 @@ import java.util.List;
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 
+import org.mongodb.morphia.Datastore;
 
 import br.com.sonikro.b2w_images.api.ExternalImageAPI;
 import br.com.sonikro.b2w_images.dao.ImageDAO;
@@ -71,6 +72,7 @@ public class MainTest {
 
 		
 		client.close();
+		
 		
 	}
 }

@@ -26,9 +26,9 @@ public class DatastoreManager {
 			MongoClient mongoClient = new MongoClient(address, Arrays.asList(mongoCredential));
 					
 			datastore = morphia.createDatastore(mongoClient, "b2w_example");
-			
 		}
 		
+				
 		return datastore;
 	}
 }

@@ -25,6 +25,7 @@ public class CloudinaryAPI implements IImageUploader{
 		File imageFile = new File(filename);
 		ImageIO.write(image, extension, imageFile);
 		Map uploadResult = cloudinary.uploader().upload(imageFile, ObjectUtils.emptyMap());
+		imageFile.delete(); //Remove temp file from server
 		return (String) uploadResult.get("url");
 	}
 
