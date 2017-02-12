@@ -21,7 +21,7 @@ import br.com.sonikro.b2w_images.graphics.ImageUploaderType;
 import br.com.sonikro.b2w_images.model.Image;
 import br.com.sonikro.b2w_images.model.ImageSize;
 
-public class mainTest {
+public class MainTest {
 	public static void main(String[] args) throws Exception {
 		
 		//Inject dependency to ImageDAO
