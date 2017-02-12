@@ -14,7 +14,7 @@ import br.com.sonikro.b2w_images.model.Image;
 
 import javax.ws.rs.client.ClientBuilder;
 public class TestImageAPIs {
-	private static final String SAMPLE_IMAGE = "http://54.152.221.29/images/b737_4.jpg";
+	public static final String SAMPLE_IMAGE = "http://54.152.221.29/images/b737_4.jpg";
 	@Test
 	public void TestImgulrImageUpload() throws Exception{
 		assertNotNull(uploadTestImageUsing(ImageUploaderType.IMGURL));
